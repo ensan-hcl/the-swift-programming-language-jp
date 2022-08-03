@@ -59,7 +59,7 @@ var directionToHead = CompassPoint.west
 directionToHead = .east
 ```
 
-`directionToHead` の型はすでにわかっているため、値を設定するときに型を省略できます。これにより、明示的に型指定された列挙型の値を操作するときに、非常に読みやすいコードが作成できます。
+`directionToHead` の型はすでに分かっているため、値を設定するときに型を省略できます。これにより、明示的に型指定された列挙型の値を操作するときに、非常に読みやすいコードが作成できます。
 
 ## <a id="matching-enumeration-values-with-a-switch-statement">switch 文を使った列挙値のパターンマッチング\(Matching Enumeration Values with a Switch Statement\)</a>
 

@@ -766,7 +766,7 @@ switch の case 属性は、switch 文のケースにのみ適用できます。
 
 ### unknown
 
-この属性を switch ケースに適用すると、コードのコンパイル時にわかっているどの列挙ケースとも一致することがない可能性を示します。`unknown` 属性の使用方法の例については、[Switching Over Future Enumeration Cases\(列挙型の将来のケースのスイッチング\)](../language-reference/statements.md#switching-over-future-enumeration-cases)を参照ください。
+この属性を switch ケースに適用すると、コードのコンパイル時に分かっているどの列挙ケースとも一致することがない可能性を示します。`unknown` 属性の使用方法の例については、[Switching Over Future Enumeration Cases\(列挙型の将来のケースのスイッチング\)](../language-reference/statements.md#switching-over-future-enumeration-cases)を参照ください。
 
 > GRAMMAR OF AN ATTRIBUTE  
 > attribute → `@` [attribute-name](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#grammar_attribute-name) [attribute-argument-clause](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#grammar_attribute-argument-clause)<sub>opt</sub>  

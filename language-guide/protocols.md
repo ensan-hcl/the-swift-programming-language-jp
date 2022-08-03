@@ -270,7 +270,7 @@ class Dice {
 
 `Dice` には、初期状態を設定するためのイニシャライザもあります。このイニシャライザには、`RandomNumberGenerator` 型の `generator` と呼ばれるパラメータがあります。新しい `Dice` インスタンスを初期化するときに、このパラメータに `RandomNumberGenerator` に準拠する型の値を渡すことができます。
 
-`Dice` は、1 からサイコロの面の数までの整数値を返す 1 つのインスタンスメソッド、`roll` を提供しています。このメソッドは、ジェネレータの `random()` メソッドを呼び出して `0.0` から `1.0` の間の新しい乱数を作成し、この乱数を使用して正しい範囲内でサイコロの目を作成します。`generator` は `RandomNumberGenerator` に準拠することがわかっているため、呼び出すべき `random()` メソッドが存在していることは保証されています。
+`Dice` は、1 からサイコロの面の数までの整数値を返す 1 つのインスタンスメソッド、`roll` を提供しています。このメソッドは、ジェネレータの `random()` メソッドを呼び出して `0.0` から `1.0` の間の新しい乱数を作成し、この乱数を使用して正しい範囲内でサイコロの目を作成します。`generator` は `RandomNumberGenerator` に準拠することが分かっているため、呼び出すべき `random()` メソッドが存在していることは保証されています。
 
 `Dice` クラスを使用して、`LinearCongruentialGenerator` インスタンスを乱数ジェネレータとして使用して、6 面体のサイコロを作成する方法を次に示します:
 
@@ -564,7 +564,7 @@ for thing in things {
 // A hamster named Simon
 ```
 
-`Thing` 定数は `TextRepresentable` 型なことに注目してください。内部の実際のインスタンスがそれらの型の 1 つの場合でも、型は `Dice`、`DiceGame`、または `Hamster` ではありません。これは `TextRepresentable` 型で、`TextRepresentable` は全て `textualDescription` プロパティを持つことがわかっているため、ループ処理の中で安全に `thing.textualDescription` にアクセスできます。
+`Thing` 定数は `TextRepresentable` 型なことに注目してください。内部の実際のインスタンスがそれらの型の 1 つの場合でも、型は `Dice`、`DiceGame`、または `Hamster` ではありません。これは `TextRepresentable` 型で、`TextRepresentable` は全て `textualDescription` プロパティを持つことが分かっているため、ループ処理の中で安全に `thing.textualDescription` にアクセスできます。
 
 ## <a id="protocols-protocol-inheritance">プロトコル継承\(Protocol Inheritance\)</a>
 
@@ -776,7 +776,7 @@ for object in objects {
 // Something that doesn't have an area
 ```
 
-配列内のオブジェクトが `HasArea` プロトコルに準拠している場合は、常に `as?` 演算子は、`objectWithArea` と呼ばれる定数へオプショナルバインドでアンラップされます。`objectWithArea` 定数は `HasArea` 型なことがわかっているため、その `area` プロパティは型安全な方法でアクセスおよび出力できます。
+配列内のオブジェクトが `HasArea` プロトコルに準拠している場合は、常に `as?` 演算子は、`objectWithArea` と呼ばれる定数へオプショナルバインドでアンラップされます。`objectWithArea` 定数は `HasArea` 型なことが分かっているため、その `area` プロパティは型安全な方法でアクセスおよび出力できます。
 
 プロトコルに準拠したオブジェクトは、キャストで変更されないことに注目してください。それらはそれぞれ `Circle`、`Country`、`Animal` です。ただし、オブジェクトが `objectWithArea` 定数に格納されている時点では、`HasArea` 型とのみ認識されているため、アクセスできるのは `area` プロパティのみです。
 

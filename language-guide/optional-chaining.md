@@ -200,7 +200,7 @@ func createAddress() -> Address {
 john.residence?.address = createAddress()
 ```
 
-何も出力されないため、`createAddress()` 関数が呼び出されていないことがわかります。
+何も出力されないため、`createAddress()` 関数が呼び出されていないことが分かります。
 
 ## <a id="calling-methods-through-optional-chaining">オプショナルチェーンを通したメソッドの呼び出し\(Calling Methods Through Optional Chaining\)</a>
 

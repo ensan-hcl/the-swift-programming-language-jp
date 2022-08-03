@@ -56,7 +56,7 @@ _遅延格納プロパティ_は、最初に使用されるまで初期値が計
 > NOTE  
 > インスタンスの初期化が完了するまで初期値が取得できない可能性があるため、遅延プロパティは常に変数として\(`var` キーワードを使用して\)宣言する必要があります。定数プロパティは、初期化が完了する前に常に値を持っている必要があるため、`lazy` で宣言することはできません。
 
-遅延格納プロパティは、プロパティの初期値が、インスタンスの初期化が完了後でないと値がわからない外部要因に依存している場合に役立ちます。プロパティの初期値が必要になるまで実行すべきではない、複雑または計算コストの高いセットアップが必要な場合にも役立ちます。
+遅延格納プロパティは、プロパティの初期値が、インスタンスの初期化が完了後でないと値が分からない外部要因に依存している場合に役立ちます。プロパティの初期値が必要になるまで実行すべきではない、複雑または計算コストの高いセットアップが必要な場合にも役立ちます。
 
 下記の例では、遅延格納プロパティを使用して、複雑なクラスの不必要な初期化を回避しています。この例では、`DataImporter` と `DataManager` という 2 つのクラスを定義していますが、どちらも全体像は表示していません:
 
@@ -658,7 +658,7 @@ var leftChannel = AudioChannel()
 var rightChannel = AudioChannel()
 ```
 
-左チャネルの `currentLevel` を `7` に設定すると、`maxInputLevelForAllChannels` 型プロパティが `7` に更新されることがわかります。
+左チャネルの `currentLevel` を `7` に設定すると、`maxInputLevelForAllChannels` 型プロパティが `7` に更新されることが分かります。
 
 ```swift
 leftChannel.currentLevel = 7
@@ -668,7 +668,7 @@ print(AudioChannel.maxInputLevelForAllChannels)
 // 7
 ```
 
-右チャネルの `currentLevel` を `11` に設定しようとすると、右チャネルの `currentLevel` プロパティが最大値 `10` に制限され、`maxInputLevelForAllChannels` 型プロパティが `10` に更新されることがわかります。
+右チャネルの `currentLevel` を `11` に設定しようとすると、右チャネルの `currentLevel` プロパティが最大値 `10` に制限され、`maxInputLevelForAllChannels` 型プロパティが `10` に更新されることが分かります。
 
 ```swift
 rightChannel.currentLevel = 11

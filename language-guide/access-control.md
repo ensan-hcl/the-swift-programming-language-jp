@@ -245,7 +245,7 @@ struct TrackedString {
 
 `TrackedString` 構造体と `value` プロパティは明示的なアクセスレベル修飾子を提供していないため、両方ともデフォルトの internal アクセスレベルを受け取ります。ただし、`numberOfEdits` プロパティのアクセスレベルは `private(set)` 修飾子でマークされており、get には引き続きデフォルトのアクセスレベル internal が設定され、プロパティは `TrackedString` 構造体の一部のコード内からのみ設定可能だということを示しています。これにより、`TrackedString` は `numberOfEdits` プロパティを内部的に変更できますが、構造体の定義の外部で使用される場合は、プロパティを読み取り専用プロパティとして表示できます。
 
-`TrackedString` インスタンスを作成し、その文字列値を数回変更すると、`numberOfEdits` プロパティの値が変更の数に一致するように更新されていることがわかります。
+`TrackedString` インスタンスを作成し、その文字列値を数回変更すると、`numberOfEdits` プロパティの値が変更の数に一致するように更新されていることが分かります。
 
 ```swift
 var stringToEdit = TrackedString()

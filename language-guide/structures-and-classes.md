@@ -149,7 +149,7 @@ var cinema = hd
 cinema.width = 2048
 ```
 
-`cinema` の `width` プロパティを確認すると、実際に 2048 に変更されていることがわかります。
+`cinema` の `width` プロパティを確認すると、実際に 2048 に変更されていることが分かります。
 
 ```swift
 print("cinema is now \(cinema.width) pixels wide")
@@ -215,7 +215,7 @@ alsoTenEighty.frameRate = 30.0
 
 ![&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x72B6;&#x614B;&#x306E;&#x5171;&#x6709;](../assets/sharedStateClass_2x.png)
 
-`tenEighty` の `frameRate` プロパティを確認すると、基になる `VideoMode` インスタンスから `30.0` の新しいフレームレートが正しく設定されていることがわかります。
+`tenEighty` の `frameRate` プロパティを確認すると、基になる `VideoMode` インスタンスから `30.0` の新しいフレームレートが正しく設定されていることが分かります。
 
 ```swift
 print("The frameRate property of tenEighty is now \(tenEighty.frameRate)")

@@ -267,5 +267,5 @@ printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 この関数 `printIntegerKinds(_:)` は、`Int` 値の入力配列を受け取り、それらの値を順番に繰り返します。配列内の各整数について、関数はその整数の `kind` 計算プロパティを検証し、適切な説明を出力します。
 
 > NOTE  
-> `number.kind` は `Int.Kind` 型なことがすでにわかっているため、`Int.Kind` の各ケースは、`Int.Kind.negative` ではなく `.negative` など、`switch` 文内では省略して記述できます。
+> `number.kind` は `Int.Kind` 型なことがすでに分かっているため、`Int.Kind` の各ケースは、`Int.Kind.negative` ではなく `.negative` など、`switch` 文内では省略して記述できます。
 
